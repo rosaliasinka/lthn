@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-secondary">
+    <div class="container mt-5">
+        <h2 class="text-center">Aplikasi Nilai</h2>
+        <form id="nilaiForm">
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="text" class="form-control" id="nim" required>
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">Nilai Teori</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="presensiTeori">Presensi</label>
+                                <input type="number" class="form-control" id="presensiTeori">
+                            </div>
+                            <div class="form-group">
+                                <label for="tugasTeori">Tugas</label>
+                                <input type="number" class="form-control" id="tugasTeori">
+                            </div>
+                            <div class="form-group">
+                                <label for="utsTeori">UTS</label>
+                                <input type="number" class="form-control" id="utsTeori">
+                            </div>
+                            <div class="form-group">
+                                <label for="uasTeori">UAS</label>
+                                <input type="number" class="form-control" id="uasTeori">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-danger text-light">Nilai Praktek</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="presensiPraktek">Presensi</label>
+                                <input type="number" class="form-control" id="presensiPraktek">
+                            </div>
+                            <div class="form-group">
+                                <label for="tugasPraktek">Tugas</label>
+                                <input type="number" class="form-control" id="tugasPraktek">
+                            </div>
+                            <div class="form-group">
+                                <label for="utsPraktek">UTS</label>
+                                <input type="number" class="form-control" id="utsPraktek">
+                            </div>
+                            <div class="form-group">
+                                <label for="uasPraktek">UAS</label>
+                                <input type="number" class="form-control" id="uasPraktek">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+            <button type="reset" class="btn btn-danger mt-3">Batal</button>
+        </form>
+        <hr>
+        <p>Rincian Nilai</p>
+        <table class="table table-bordered mt-4">
+            <thead class="thead-light">
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Presensi</th>
+                    <th>Tugas</th>
+                    <th>UTS</th>
+                    <th>UAS</th>
+                    <th>Nilai Akhir</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="rincianNilai">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <button id="resetTable" class="btn btn-warning">Reset</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

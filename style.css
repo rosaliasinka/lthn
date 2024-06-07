@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.card.nilai-teori .card-header {
+    background-color: #cce4f7 !important;
+    color: #000 !important;
+}
+
+.card.nilai-praktek .card-header {
+    background-color: #f9cce4 !important;
+    color: #000 !important;
+}
+
+button[type="submit"] {
+    background-color: #418f99;
+    border-color: #418f99;
+}
+
+button[type="reset"] {
+    background-color: #d12f3d;
+    border-color: #d12f3d;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    opacity: 0.9;
+}
+
+.table thead {
+    background-color: white;
+}
+
+.table {
+    background-color: white;
+}
